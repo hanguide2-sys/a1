@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+
+<html lang="ko"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container": "#eeedf4", "on-primary": "#ffffff", "on-primary-container": "#90a8ff", "surface-container-low": "#f4f3fa", "primary-fixed": "#dce1ff", "surface-container-highest": "#e3e1e9", "surface-variant": "#e3e1e9", "tertiary-fixed": "#ffdbcb", "inverse-primary": "#b6c4ff", "secondary-container": "#d5e3fc", "secondary-fixed": "#d5e3fc", "on-surface-variant": "#444651", "surface-expanded-bg": "#F8FAFC", "on-secondary-container": "#57657a", "status-danger-bg": "#FFF1F2", "border-grid": "#E2E8F0", "surface-table-selected": "#EFF6FF", "surface-dim": "#dad9e1", "surface-tint": "#4059aa", "on-tertiary-fixed": "#341100", "tertiary-fixed-dim": "#ffb691", "surface-table-hover": "#F1F5F9", "status-normal-bg": "#ECFDF5", "primary-fixed-dim": "#b6c4ff", "outline": "#757682", "on-error": "#ffffff", "on-secondary": "#ffffff", "status-warning": "#D97706", "surface": "#faf8ff", "outline-variant": "#c5c5d3", "on-primary-fixed-variant": "#264191", "secondary": "#515f74", "on-tertiary-fixed-variant": "#773205", "primary": "#00236f", "status-danger": "#E11D48", "surface-bright": "#faf8ff", "background": "#faf8ff", "error": "#ba1a1a", "status-normal-border": "#A7F3D0", "on-surface": "#1a1b21", "inverse-surface": "#2f3036", "secondary-fixed-dim": "#b9c7df", "border-focus": "#1D4ED8", "status-warning-border": "#FDE68A", "error-container": "#ffdad6", "surface-table-header": "#F8FAFC", "on-tertiary-container": "#f39461", "on-background": "#1a1b21", "on-tertiary": "#ffffff", "tertiary-container": "#6e2c00", "status-normal": "#059669", "on-secondary-fixed": "#0d1c2e", "surface-container-lowest": "#ffffff", "on-secondary-fixed-variant": "#3a485b", "tertiary": "#4b1c00", "status-warning-bg": "#FFFBEB", "primary-container": "#1e3a8a", "status-danger-border": "#FECDD3", "surface-container-high": "#e9e7ef", "inverse-on-surface": "#f1f0f7", "on-error-container": "#93000a", "on-primary-fixed": "#00164e" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "margin": "1.5rem", "gutter": "1rem", "space-sm": "0.5rem", "space-xl": "2rem", "space-xs": "0.25rem", "space-lg": "1.25rem", "space-md": "0.75rem" }, "fontFamily": { "metric-label": [ "Inter" ], "headline-md": [ "Inter" ], "headline-lg": [ "Inter" ], "table-cell-text": [ "Inter" ], "body-sm": [ "Inter" ], "metric-value": [ "Inter" ], "table-header": [ "Inter" ], "headline-xl": [ "Inter" ], "badge-label": [ "Inter" ], "table-cell-num": [ "Inter" ] }, "fontSize": { "metric-label": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" } ], "headline-md": [ "18px", { "lineHeight": "26px", "fontWeight": "600" } ], "headline-lg": [ "22px", { "lineHeight": "30px", "fontWeight": "700" } ], "table-cell-text": [ "13px", { "lineHeight": "20px", "fontWeight": "400" } ], "body-sm": [ "12px", { "lineHeight": "18px", "fontWeight": "400" } ], "metric-value": [ "30px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "table-header": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "600" } ], "headline-xl": [ "28px", { "lineHeight": "36px", "fontWeight": "700" } ], "badge-label": [ "11px", { "lineHeight": "14px", "fontWeight": "700" } ], "table-cell-num": [ "13px", { "lineHeight": "20px", "letterSpacing": "-0.01em", "fontWeight": "500" } ] } } } };</script></head><body class="bg-surface font-body-sm text-body-sm text-on-surface antialiased"><header class="fixed top-0 w-full z-50 bg-surface-container-lowest/95 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.06)]"><div class="h-16 w-full px-margin flex items-center justify-between"><div class="flex items-center gap-space-xl"><div class="flex items-center gap-space-md"><div class="w-9 h-9 rounded-lg bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[20px]">apartment</span></div><div class="flex flex-col"><span class="font-headline-md text-headline-md tracking-tight text-primary leading-tight">동일토건</span><span class="font-table-header text-table-header text-secondary leading-none">공무관리시스템</span></div></div><div class="h-6 w-[1px] bg-outline-variant"></div><nav class="flex items-center gap-space-lg h-16" data-active-classes="text-primary font-bold border-b-2 border-primary-container pb-[18px] mt-[18px]"><a class="text-on-surface-variant hover:text-on-surface transition-colors font-metric-label text-metric-label py-space-sm" data-path="overview-summary" href="#">현황 요약</a><a class="text-on-surface-variant hover:text-on-surface transition-colors font-metric-label text-metric-label py-space-sm" data-path="site-comparison" href="#">현장별 비교표</a><a class="text-on-surface-variant hover:text-on-surface transition-colors font-metric-label text-metric-label py-space-sm" data-path="data-import" href="#">자료 가져오기</a><a class="text-on-surface-variant hover:text-on-surface transition-colors font-metric-label text-metric-label py-space-sm" data-path="ai-construction-qa" href="#">AI 공무 분석</a></nav></div><div class="flex items-center gap-space-md"><div class="hidden xl:flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-surface-container-low text-secondary"><span class="material-symbols-outlined text-[16px] text-secondary">calendar_today</span><span class="font-badge-label text-badge-label text-on-secondary-container">2026.09 월말 기준 (12개 현장)</span></div><button class="flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-secondary-container text-on-secondary-fixed hover:bg-secondary-fixed-dim transition-colors" type="button"><span class="material-symbols-outlined text-[16px]">file_download</span><span class="font-table-header text-table-header">CSV 내보내기</span></button><button class="p-space-xs rounded-lg hover:bg-surface-container-highest transition-colors relative flex items-center justify-center text-on-surface-variant" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1 right-1 w-2 h-2 rounded-full bg-status-danger"></span></button><div class="h-5 w-[1px] bg-outline-variant"></div><div class="flex items-center gap-space-sm pl-space-xs"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="hidden md:flex flex-col text-left"><span class="font-table-header text-table-header text-on-surface leading-tight">본사 공무팀</span><span class="font-body-sm text-body-sm text-outline leading-none">관리자 (책임)</span></div></div></div></div></header><main class="w-full pt-16 bg-surface"><div class="flex flex-col w-full">
+<!-- Top Scope & Control Strip -->
+<div class="w-full bg-surface-container-lowest px-margin py-space-sm border-b border-grid flex flex-wrap items-center justify-between gap-space-md shadow-sm">
+<div class="flex flex-wrap items-center gap-space-md">
+<div class="flex items-center gap-space-xs text-primary font-headline-md text-headline-md">
+<span class="material-symbols-outlined text-primary text-[22px]" style="font-variation-settings: 'FILL' 1;">psychology</span>
+<span>AI 공무 분석 어드바이저</span>
+<span class="font-table-header text-table-header text-secondary font-normal ml-space-xs">(현장간 공정·기성 비교 질의응답)</span>
+</div>
+<div class="h-4 w-[1px] bg-border-grid hidden md:block"></div>
+<!-- Scope Pill -->
+<div class="inline-flex items-center gap-space-xs px-space-sm py-space-xs bg-surface-table-header rounded-lg text-secondary">
+<span class="material-symbols-outlined text-[15px] text-primary">filter_alt</span>
+<span class="font-body-sm text-body-sm text-on-surface">기준월: <strong class="text-primary font-semibold">2026년 09월 (당월)</strong></span>
+<span class="text-outline">|</span>
+<span class="font-body-sm text-body-sm text-on-surface">권역: <strong class="text-primary font-semibold">전체 (12개 현장)</strong></span>
+<span class="text-outline">|</span>
+<span class="font-body-sm text-body-sm text-status-normal font-semibold">비교 분석 가동 중 (3개소 포커스)</span>
+</div>
+</div>
+<!-- Header Right Quick Actions -->
+<div class="flex items-center gap-space-sm">
+<div class="hidden lg:flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg bg-status-warning-bg text-status-warning">
+<span class="material-symbols-outlined text-[16px]">info</span>
+<span class="font-badge-label text-badge-label">비교 질의 시 2개소 이상 현장 선택 필수</span>
+</div>
+<button class="flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-secondary-container text-on-secondary-fixed hover:bg-secondary-fixed-dim transition-colors" id="btn-export-brief" type="button">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+<span class="font-table-header text-table-header">보고서 요약 복사</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-surface-container-high text-on-surface-variant hover:bg-surface-container-highest transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">refresh</span>
+<span class="font-table-header text-table-header">대화 초기화</span>
+</button>
+</div>
+</div>
+<!-- Main Content 3-Column Enterprise Workspace Layout -->
+<div class="w-full px-margin py-space-md grid grid-cols-12 gap-gutter items-start">
+<!-- LEFT PANEL: Multi-Site Selection & Preset Comparisons (Cols 3) -->
+<aside class="col-span-12 lg:col-span-3 flex flex-col gap-space-md">
+<!-- Preset Prompt Cards -->
+<div class="bg-surface-container-lowest rounded-lg p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-space-sm pb-space-xs border-b border-grid">
+<div class="flex items-center gap-space-xs text-primary font-metric-label text-metric-label">
+<span class="material-symbols-outlined text-[18px]">quickreply</span>
+<span>핵심 권장 비교 질의 (PRD)</span>
+</div>
+<span class="font-badge-label text-badge-label text-outline">3건</span>
+</div>
+<div class="space-y-space-xs">
+<!-- Preset Question 1 -->
+<div class="group cursor-pointer p-space-sm rounded-lg bg-surface-table-header hover:bg-surface-table-selected transition-all text-left" onclick="insertPrompt('점검 현장 D, I, K 중 공정차이가 가장 큰 곳과 핵심 원인은?')" role="button" tabindex="0">
+<div class="flex items-center justify-between text-primary font-table-header text-table-header group-hover:text-primary-container">
+<span class="inline-flex items-center gap-space-xs">
+<span class="w-4 h-4 rounded-full bg-status-danger-bg text-status-danger flex items-center justify-center font-bold text-[10px]">1</span>
+<span>공정 지연 격차 &amp; 주원인</span>
+</span>
+<span class="material-symbols-outlined text-[16px] text-outline group-hover:text-primary transition-transform group-hover:translate-x-0.5">arrow_forward</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs line-clamp-2">"점검 현장 D, I, K 중 공정차이가 가장 큰 곳과 핵심 원인은?"</p>
+</div>
+<!-- Preset Question 2 -->
+<div class="group cursor-pointer p-space-sm rounded-lg bg-surface-table-header hover:bg-surface-table-selected transition-all text-left" onclick="insertPrompt('경기 권역 현장끼리(D, I, K, F, H 등) 기성률과 공정차이를 비교해 줘')" role="button" tabindex="0">
+<div class="flex items-center justify-between text-primary font-table-header text-table-header group-hover:text-primary-container">
+<span class="inline-flex items-center gap-space-xs">
+<span class="w-4 h-4 rounded-full bg-secondary-container text-on-secondary-fixed flex items-center justify-center font-bold text-[10px]">2</span>
+<span>경기권 기성률 vs 공정차이</span>
+</span>
+<span class="material-symbols-outlined text-[16px] text-outline group-hover:text-primary transition-transform group-hover:translate-x-0.5">arrow_forward</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs line-clamp-2">"경기 권역 현장끼리(D, I, K, F, H 등) 기성률과 공정차이를 비교해 줘"</p>
+</div>
+<!-- Preset Question 3 -->
+<div class="group cursor-pointer p-space-sm rounded-lg bg-surface-table-header hover:bg-surface-table-selected transition-all text-left" onclick="insertPrompt('현장 D와 I의 기록된 대응 계획 및 만회 목표는 어떻게 다른가?')" role="button" tabindex="0">
+<div class="flex items-center justify-between text-primary font-table-header text-table-header group-hover:text-primary-container">
+<span class="inline-flex items-center gap-space-xs">
+<span class="w-4 h-4 rounded-full bg-status-warning-bg text-status-warning flex items-center justify-center font-bold text-[10px]">3</span>
+<span>만회 대책 &amp; 목표 비교</span>
+</span>
+<span class="material-symbols-outlined text-[16px] text-outline group-hover:text-primary transition-transform group-hover:translate-x-0.5">arrow_forward</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs line-clamp-2">"현장 D와 I의 기록된 대응 계획 및 만회 목표는 어떻게 다른가?"</p>
+</div>
+</div>
+</div>
+<!-- Multi-Site Comparison Selector Component -->
+<div class="bg-surface-container-lowest rounded-lg p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs text-primary font-metric-label text-metric-label">
+<span class="material-symbols-outlined text-[18px]">checklist</span>
+<span>비교 대상 현장 선택</span>
+</div>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high font-badge-label text-badge-label text-primary font-bold" id="selected-count">3 / 12 선택</span>
+</div>
+<p class="font-body-sm text-body-sm text-outline mb-space-sm">비교할 현장을 2개소 이상 체크하십시오.</p>
+<!-- Search / Quick Filter in selector -->
+<div class="relative mb-space-sm">
+<span class="material-symbols-outlined absolute left-2 top-2 text-[16px] text-outline">search</span>
+<input class="w-full pl-7 pr-space-sm py-space-xs text-body-sm font-body-sm bg-surface-table-header rounded-lg text-on-surface focus:outline-none focus:ring-1 focus:ring-border-focus" placeholder="현장명, 코드 검색..." type="text"/>
+</div>
+<div class="max-h-[380px] overflow-y-auto space-y-1 pr-1">
+<!-- Priority Target Sites -->
+<div class="text-[11px] font-metric-label text-status-danger px-space-xs py-0.5 uppercase tracking-wider flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-status-danger"></span>
+            공정 관리 점검 대상 현장 (3)
+          </div>
+<!-- Site D (Checked) -->
+<label class="flex items-center justify-between p-space-xs rounded-lg hover:bg-surface-table-hover cursor-pointer bg-surface-table-selected transition-colors">
+<div class="flex items-center gap-space-xs min-w-0">
+<input checked="" class="site-chk rounded text-primary focus:ring-0 cursor-pointer" type="checkbox" value="D"/>
+<div class="truncate">
+<span class="font-table-header text-table-header text-primary font-bold">[현장 D]</span>
+<span class="font-table-cell-text text-table-cell-text text-on-surface ml-1">송도 복합연구소</span>
+</div>
+</div>
+<span class="font-badge-label text-badge-label px-1 py-0.5 rounded bg-status-danger-bg text-status-danger font-bold">-10.7pp</span>
+</label>
+<!-- Site I (Checked) -->
+<label class="flex items-center justify-between p-space-xs rounded-lg hover:bg-surface-table-hover cursor-pointer bg-surface-table-selected transition-colors">
+<div class="flex items-center gap-space-xs min-w-0">
+<input checked="" class="site-chk rounded text-primary focus:ring-0 cursor-pointer" type="checkbox" value="I"/>
+<div class="truncate">
+<span class="font-table-header text-table-header text-primary font-bold">[현장 I]</span>
+<span class="font-table-cell-text text-table-cell-text text-on-surface ml-1">화성 바이오물류</span>
+</div>
+</div>
+<span class="font-badge-label text-badge-label px-1 py-0.5 rounded bg-status-danger-bg text-status-danger font-bold">-7.6pp</span>
+</label>
+<!-- Site K (Checked) -->
+<label class="flex items-center justify-between p-space-xs rounded-lg hover:bg-surface-table-hover cursor-pointer bg-surface-table-selected transition-colors">
+<div class="flex items-center gap-space-xs min-w-0">
+<input checked="" class="site-chk rounded text-primary focus:ring-0 cursor-pointer" type="checkbox" value="K"/>
+<div class="truncate">
+<span class="font-table-header text-table-header text-primary font-bold">[현장 K]</span>
+<span class="font-table-cell-text text-table-cell-text text-on-surface ml-1">평택 포승물류</span>
+</div>
+</div>
+<span class="font-badge-label text-badge-label px-1 py-0.5 rounded bg-status-danger-bg text-status-danger font-bold">-5.4pp</span>
+</label>
+<!-- Divider -->
+<div class="text-[11px] font-metric-label text-secondary px-space-xs py-0.5 uppercase tracking-wider mt-space-sm">
+            기타 권역 현장 (주의 및 정상)
+          </div>
+<!-- Site A -->
+<label class="flex items-center justify-between p-space-xs rounded-lg hover:bg-surface-table-hover cursor-pointer transition-colors">
+<div class="flex items-center gap-space-xs min-w-0">
+<input class="site-chk rounded text-primary focus:ring-0 cursor-pointer" type="checkbox" value="A"/>
+<div class="truncate">
+<span class="font-table-header text-table-header text-secondary font-bold">[현장 A]</span>
+<span class="font-table-cell-text text-table-cell-text text-on-surface ml-1">마곡 R&amp;D 센터</span>
+</div>
+</div>
+<span class="font-badge-label text-badge-label px-1 py-0.5 rounded bg-status-warning-bg text-status-warning font-semibold">-3.2pp</span>
+</label>
+<!-- Site B -->
+<label class="flex items-center justify-between p-space-xs rounded-lg hover:bg-surface-table-hover cursor-pointer transition-colors">
+<div class="flex items-center gap-space-xs min-w-0">
+<input class="site-chk rounded text-primary focus:ring-0 cursor-pointer" type="checkbox" value="B"/>
+<div class="truncate">
+<span class="font-table-header text-table-header text-secondary font-bold">[현장 B]</span>
+<span class="font-table-cell-text text-table-cell-text text-on-surface ml-1">판교 제2테크노</span>
+</div>
+</div>
+<span class="font-badge-label text-badge-label px-1 py-0.5 rounded bg-status-normal-bg text-status-normal font-semibold">+0.8pp</span>
+</label>
+<!-- Site C -->
+<label class="flex items-center justify-between p-space-xs rounded-lg hover:bg-surface-table-hover cursor-pointer transition-colors">
+<div class="flex items-center gap-space-xs min-w-0">
+<input class="site-chk rounded text-primary focus:ring-0 cursor-pointer" type="checkbox" value="C"/>
+<div class="truncate">
+<span class="font-table-header text-table-header text-secondary font-bold">[현장 C]</span>
+<span class="font-table-cell-text text-table-cell-text text-on-surface ml-1">청라 데이터센터</span>
+</div>
+</div>
+<span class="font-badge-label text-badge-label px-1 py-0.5 rounded bg-status-warning-bg text-status-warning font-semibold">-3.8pp</span>
+</label>
+<!-- Site F -->
+<label class="flex items-center justify-between p-space-xs rounded-lg hover:bg-surface-table-hover cursor-pointer transition-colors">
+<div class="flex items-center gap-space-xs min-w-0">
+<input class="site-chk rounded text-primary focus:ring-0 cursor-pointer" type="checkbox" value="F"/>
+<div class="truncate">
+<span class="font-table-header text-table-header text-secondary font-bold">[현장 F]</span>
+<span class="font-table-cell-text text-table-cell-text text-on-surface ml-1">용인 남사 지식산업</span>
+</div>
+</div>
+<span class="font-badge-label text-badge-label px-1 py-0.5 rounded bg-status-normal-bg text-status-normal font-semibold">-1.1pp</span>
+</label>
+</div>
+<div class="mt-space-sm pt-space-xs border-t border-grid flex items-center justify-between">
+<button class="font-badge-label text-badge-label text-primary hover:underline" onclick="selectAll(true)" type="button">전체 선택</button>
+<button class="font-badge-label text-badge-label text-outline hover:underline" onclick="selectAll(false)" type="button">선택 해제</button>
+<button class="px-space-sm py-1 rounded bg-primary text-on-primary font-badge-label text-badge-label hover:bg-primary-container transition-colors" onclick="applyComparisonScope()" type="button">비교 반영</button>
+</div>
+</div>
+</aside>
+<!-- CENTER PANEL: Primary Deep Analysis Workspace / Thread (Cols 6) -->
+<main class="col-span-12 lg:col-span-6 flex flex-col gap-space-md">
+<!-- Conversation / Analysis Stream Container -->
+<div class="bg-surface-container-lowest rounded-lg shadow-sm flex flex-col overflow-hidden">
+<!-- Thread Header Bar -->
+<div class="px-space-md py-space-sm bg-surface-table-header border-b border-grid flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-7 h-7 rounded-lg bg-primary-container flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-table-header text-table-header text-primary font-bold">Gemini Pro 공무 특화 추론 모델</span>
+<span class="px-1.5 py-0.2 rounded bg-secondary-container text-on-secondary-fixed font-badge-label text-[10px]">ERP 원장 연동 모드</span>
+</div>
+<p class="font-body-sm text-body-sm text-outline">분석 데이터 기준: 2026-09-30 24:00 (12개 전 현장 마감 집계표 144행)</p>
+</div>
+</div>
+<span class="font-badge-label text-badge-label text-secondary flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-status-normal"></span>
+            동기화 정상
+          </span>
+</div>
+<!-- Chat / Response Scroll View -->
+<div class="p-space-md space-y-space-md">
+<!-- User Prompt Bubble -->
+<div class="flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">person</span>
+</div>
+<div class="flex-1 bg-surface-container-low rounded-lg p-space-sm text-on-surface">
+<div class="flex items-center justify-between mb-1">
+<span class="font-table-header text-table-header text-primary font-semibold">본사 공무팀 질의</span>
+<span class="font-body-sm text-body-sm text-outline">2026-09-30 20:14</span>
+</div>
+<p class="font-table-cell-text text-table-cell-text text-on-surface">
+<strong>[비교 질의]</strong> 9월 공정 점검 대상인 <strong>[현장 D] 송도 첨단복합연구소</strong>, <strong>[현장 I] 화성 바이오 스마트물류</strong>, <strong>[현장 K] 평택 포승 친환경물류</strong> 3곳의 지연 규모, 원인, 그리고 제출된 만회 계획을 비교 분석해 줘.
+              </p>
+</div>
+</div>
+<!-- AI Response Structured Container -->
+<div class="flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0 text-on-primary">
+<span class="material-symbols-outlined text-[18px]">smart_toy</span>
+</div>
+<div class="flex-1 flex flex-col gap-space-sm">
+<!-- Takeaway Banner -->
+<div class="p-space-sm rounded-lg bg-surface-table-header border-l-4 border-primary">
+<div class="flex items-center gap-space-xs font-table-header text-table-header text-primary mb-1">
+<span class="material-symbols-outlined text-[18px]">analytics</span>
+<span>핵심 비교 결론 요약 (Key Takeaways)</span>
+</div>
+<p class="font-table-cell-text text-table-cell-text text-on-surface-variant leading-relaxed">
+                  2026년 9월 마감 기준, <strong>[현장 D] 송도</strong>의 공정차이가 <strong class="text-status-danger">-10.7%p</strong>로 전사에서 지연 폭이 가장 큽니다. 반면 <strong>[현장 I]</strong>는 골조 하도급 공종 수급 문제(-7.6%p), <strong>[현장 K]</strong>는 소방·전기 설계변경 승인 지연(-5.4%p)으로 지연 사유의 성격이 뚜렷하게 갈립니다. 특히 현장 D는 기성률이 실제공정률 대비 <strong>6.4%p 낮아</strong> 기성 미반영 또는 하도급 대금 지연 리스크 검토가 동시 필요합니다.
+                </p>
+</div>
+<!-- High-Density Cross-Site Comparison Table (In-Response) -->
+<div class="border border-border-grid rounded-lg overflow-hidden bg-surface-container-lowest">
+<div class="px-space-sm py-space-xs bg-surface-table-header border-b border-border-grid flex items-center justify-between">
+<span class="font-table-header text-table-header text-on-surface font-semibold">점검 현장 3개소 비교 집계표 (2026.09 기준)</span>
+<span class="font-badge-label text-badge-label text-outline">단위: % / %p / 원장 기록 기준</span>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full border-collapse text-left">
+<thead>
+<tr class="bg-surface-table-header border-b border-border-grid font-table-header text-table-header text-secondary">
+<th class="py-space-xs px-space-sm whitespace-nowrap">현장명</th>
+<th class="py-space-xs px-space-sm text-right whitespace-nowrap">계획공정</th>
+<th class="py-space-xs px-space-sm text-right whitespace-nowrap">실제공정</th>
+<th class="py-space-xs px-space-sm text-right whitespace-nowrap">공정차이</th>
+<th class="py-space-xs px-space-sm text-right whitespace-nowrap">기성률</th>
+<th class="py-space-xs px-space-sm text-right whitespace-nowrap">공정vs기성</th>
+<th class="py-space-xs px-space-sm text-center whitespace-nowrap">상태</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-border-grid font-table-cell-text text-table-cell-text">
+<!-- Row D -->
+<tr class="hover:bg-surface-table-hover">
+<td class="py-space-xs px-space-sm font-semibold text-primary">
+<div>[현장 D] 송도 첨단연구</div>
+<span class="text-[11px] text-outline">건축 / 인천</span>
+</td>
+<td class="py-space-xs px-space-sm text-right font-table-cell-num text-table-cell-num">86.5%</td>
+<td class="py-space-xs px-space-sm text-right font-table-cell-num text-table-cell-num font-semibold">75.8%</td>
+<td class="py-space-xs px-space-sm text-right font-table-cell-num text-table-cell-num font-bold text-status-danger">-10.7%p</td>
+<td class="py-space-xs px-space-sm text-right font-table-cell-num text-table-cell-num">69.4%</td>
+<td class="py-space-xs px-space-sm text-right font-table-cell-num text-table-cell-num text-status-danger font-semibold">-6.4%p</td>
+<td class="py-space-xs px-space-sm text-center">
+<span class="inline-block px-1.5 py-0.5 rounded bg-status-danger-bg text-status-danger font-badge-label text-badge-label">점검</span>
+</td>
+</tr>
+<!-- Row I -->
+<tr class="hover:bg-surface-table-hover">
+<td class="py-space-xs px-space-sm font-semibold text-primary">
+<div>[현장 I] 화성 바이오물류</div>
+<span class="text-[11px] text-outline">물류 / 경기</span>
+</td>
+<td class="py-space-xs px-space-sm text-right font-table-cell-num text-table-cell-num">68.0%</td>
+<td class="py-space-xs px-space-sm text-right font-table-cell-num text-table-cell-num font-semibold">60.4%</td>
+<td class="py-space-xs px-space-sm text-right font-table-cell-num text-table-cell-num font-bold text-status-danger">-7.6%p</td>
+<td class="py-space-xs px-space-sm text-right font-table-cell-num text-table-cell-num">58.2%</td>
+<td class="py-space-xs px-space-sm text-right font-table-cell-num text-table-cell-num text-status-warning font-semibold">-2.2%p</td>
+<td class="py-space-xs px-space-sm text-center">
+<span class="inline-block px-1.5 py-0.5 rounded bg-status-danger-bg text-status-danger font-badge-label text-badge-label">점검</span>
+</td>
+</tr>
+<!-- Row K -->
+<tr class="hover:bg-surface-table-hover">
+<td class="py-space-xs px-space-sm font-semibold text-primary">
+<div>[현장 K] 평택 포승단지</div>
+<span class="text-[11px] text-outline">토목·물류 / 경기</span>
+</td>
+<td class="py-space-xs px-space-sm text-right font-table-cell-num text-table-cell-num">92.0%</td>
+<td class="py-space-xs px-space-sm text-right font-table-cell-num text-table-cell-num font-semibold">86.6%</td>
+<td class="py-space-xs px-space-sm text-right font-table-cell-num text-table-cell-num font-bold text-status-danger">-5.4%p</td>
+<td class="py-space-xs px-space-sm text-right font-table-cell-num text-table-cell-num">84.1%</td>
+<td class="py-space-xs px-space-sm text-right font-table-cell-num text-table-cell-num text-status-normal font-semibold">-2.5%p</td>
+<td class="py-space-xs px-space-sm text-center">
+<span class="inline-block px-1.5 py-0.5 rounded bg-status-danger-bg text-status-danger font-badge-label text-badge-label">점검</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Context Comparison: Causes & Countermeasures Breakdown -->
+<div class="space-y-space-xs">
+<span class="font-table-header text-table-header text-primary font-bold block">1. 기록된 지연 사유 및 제출 만회 계획 상호 대조</span>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-xs">
+<!-- D Site Card -->
+<div class="p-space-sm rounded-lg bg-surface-table-header border border-border-grid">
+<div class="flex items-center justify-between mb-1 pb-1 border-b border-border-grid">
+<span class="font-table-header text-table-header text-primary font-bold">[현장 D] 송도</span>
+<span class="font-badge-label text-badge-label text-status-danger">차이 -10.7%p</span>
+</div>
+<div class="space-y-1.5 text-[11px]">
+<div>
+<span class="font-semibold text-secondary block">기록된 지연 사유:</span>
+<p class="text-on-surface-variant">연약지반 차수벽 추가 공사 및 8~9월 집중호우 타설 중단</p>
+</div>
+<div>
+<span class="font-semibold text-secondary block">제출 만회 대책:</span>
+<p class="text-on-surface-variant">타워크레인 1기 추가 투입, 슬래브 패스트트랙 공법 적용. 11월말까지 -4.0%p 만회 계획</p>
+</div>
+<div class="p-1 rounded bg-secondary-container text-on-secondary-fixed">
+<strong>AI 검토소견:</strong> 동절기 골조 타설 열풍기 연료비 및 한중 콘크리트 원가 반영 여부 추가 확인 요망.
+                      </div>
+</div>
+</div>
+<!-- I Site Card -->
+<div class="p-space-sm rounded-lg bg-surface-table-header border border-border-grid">
+<div class="flex items-center justify-between mb-1 pb-1 border-b border-border-grid">
+<span class="font-table-header text-table-header text-primary font-bold">[현장 I] 화성</span>
+<span class="font-badge-label text-badge-label text-status-danger">차이 -7.6%p</span>
+</div>
+<div class="space-y-1.5 text-[11px]">
+<div>
+<span class="font-semibold text-secondary block">기록된 지연 사유:</span>
+<p class="text-on-surface-variant">골조 하도급 전문인력 수급 난항 및 자동화 물류설비 인터페이스 협의 지연</p>
+</div>
+<div>
+<span class="font-semibold text-secondary block">제출 만회 대책:</span>
+<p class="text-on-surface-variant">하도급 직영팀 2개조 확대 전환, 감리단 주말 작업 연장 승인 완료</p>
+</div>
+<div class="p-1 rounded bg-secondary-container text-on-secondary-fixed">
+<strong>AI 검토소견:</strong> 직영팀 전환에 따른 노무비 증액분 현장 실행예산 초과 여부 확인 필요.
+                      </div>
+</div>
+</div>
+<!-- K Site Card -->
+<div class="p-space-sm rounded-lg bg-surface-table-header border border-border-grid">
+<div class="flex items-center justify-between mb-1 pb-1 border-b border-border-grid">
+<span class="font-table-header text-table-header text-primary font-bold">[현장 K] 평택</span>
+<span class="font-badge-label text-badge-label text-status-danger">차이 -5.4%p</span>
+</div>
+<div class="space-y-1.5 text-[11px]">
+<div>
+<span class="font-semibold text-secondary block">기록된 지연 사유:</span>
+<p class="text-on-surface-variant">소방·전기 설계 인허가 변경 협의 지연 (준공 2개월 앞둔 마감 단계)</p>
+</div>
+<div>
+<span class="font-semibold text-secondary block">제출 만회 대책:</span>
+<p class="text-on-surface-variant">인허가 관청 패스트트랙 재협의 진행, 실내 마감공정 야간 병행 작업</p>
+</div>
+<div class="p-1 rounded bg-secondary-container text-on-secondary-fixed">
+<strong>AI 검토소견:</strong> 준공 목표(11월말) 임박 현장이므로 관청 변경 승인 불발 시 지체상금 리스크 상존.
+                      </div>
+</div>
+</div>
+</div>
+</div>
+<!-- Deep Risk Assessment Box (PRD Compliant) -->
+<div class="p-space-sm rounded-lg bg-surface-container-high border border-border-grid">
+<div class="flex items-center gap-space-xs font-table-header text-table-header text-primary mb-1">
+<span class="material-symbols-outlined text-[16px] text-status-warning">gavel</span>
+<span>공무 관리 위험도 순위 및 조치 권고사항</span>
+</div>
+<ul class="list-disc list-inside space-y-1 font-body-sm text-body-sm text-on-surface">
+<li><strong>최우선 중점 관리 대상:</strong> [현장 D]는 기성-공정 괴리율(-6.4%p)과 지연율(-10.7%p)이 동시에 전사 최고 수준이므로 기성 미지급 현황 및 협력업체 정산 회의 소집이 급선무입니다.</li>
+<li><strong>공기 절대 관리 대상:</strong> [현장 K]는 준공 예정일이 2026년 11월말로 약 60일 잔여한 상태이므로, 설계변경 확정 지연 시 사용승인 일정에 직접적 타격이 예상됩니다.</li>
+</ul>
+<!-- Mandatory PRD Disclaimer -->
+<div class="mt-space-sm pt-space-xs border-t border-border-grid text-[11px] text-outline flex items-start gap-1">
+<span class="material-symbols-outlined text-[14px] shrink-0 mt-0.5">verified_user</span>
+<span><strong>[시스템 안내]</strong> 본 분석은 공무 원장 기록(2026.09)에 기재된 사유와 대책만을 토대로 한 대조 결과이며, 자료에 없는 실제 최종 준공일 확정이나 원장 외 미수금 내역 등은 추정하거나 생성하지 않습니다.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Query Input Bar (Bottom of Center Panel) -->
+<div class="p-space-sm bg-surface-table-header border-t border-border-grid">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-badge-label text-badge-label text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">tune</span>
+              질의 범위: 2026.09 전사 12개 현장 (D, I, K 우선 지정 상태)
+            </span>
+<span class="font-body-sm text-body-sm text-outline">엔터키(Enter) 또는 질문 버튼 클릭</span>
+</div>
+<div class="flex gap-space-xs">
+<div class="relative flex-1">
+<textarea class="w-full p-space-sm text-body-sm font-body-sm bg-surface-container-lowest rounded-lg border border-border-grid text-on-surface focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent resize-none leading-tight" id="ai-query-input" placeholder="현장 간 비교 질문을 입력하세요. (예: D현장과 I현장의 기성률 괴리 원인을 비교해 줘)" rows="2"></textarea>
+</div>
+<button class="px-space-lg rounded-lg bg-primary hover:bg-primary-container text-on-primary flex flex-col items-center justify-center gap-1 transition-colors shadow-sm" onclick="executeCustomPrompt()" type="button">
+<span class="material-symbols-outlined text-[20px]">send</span>
+<span class="font-table-header text-table-header text-xs">질문하기</span>
+</button>
+</div>
+<div class="flex items-center justify-between mt-space-xs text-[11px] text-outline">
+<span>* 다중 현장 비교 시 현장 코드(D, I, K 등)를 명시하면 정확도가 극대화됩니다.</span>
+<div class="flex items-center gap-space-md">
+<button class="hover:text-primary underline" onclick="insertPrompt('공정차이 상위 3개 현장의 10월 목표 공정 만회율 비교')" type="button">10월 만회율 비교</button>
+<button class="hover:text-primary underline" onclick="insertPrompt('인천 및 경기권역 현장들의 평균 기성 집행률 대조')" type="button">권역별 평균 대조</button>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- RIGHT PANEL: Real-Time Site Metric Cards & Governance Rules (Cols 3) -->
+<aside class="col-span-12 lg:col-span-3 flex flex-col gap-space-md">
+<!-- Focused Sites Mini Metric Snapshots -->
+<div class="bg-surface-container-lowest rounded-lg p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-space-sm pb-space-xs border-b border-grid">
+<div class="flex items-center gap-space-xs text-primary font-metric-label text-metric-label">
+<span class="material-symbols-outlined text-[18px]">query_stats</span>
+<span>비교 포커스 현장 스냅샷</span>
+</div>
+<span class="font-badge-label text-badge-label text-secondary">3개소 실시간</span>
+</div>
+<div class="space-y-space-sm">
+<!-- Snapshot: Site D -->
+<div class="p-space-sm rounded-lg bg-surface-table-header border border-border-grid">
+<div class="flex items-center justify-between mb-1">
+<div class="flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-status-danger"></span>
+<span class="font-table-header text-table-header text-primary font-bold">[D] 송도 첨단연구소</span>
+</div>
+<span class="font-badge-label text-badge-label text-status-danger px-1 rounded bg-status-danger-bg font-bold">공정 최저</span>
+</div>
+<div class="grid grid-cols-2 gap-2 mt-2 pt-1 border-t border-border-grid text-[11px]">
+<div>
+<span class="text-outline block">계획 / 실제</span>
+<span class="font-semibold text-on-surface">86.5% / 75.8%</span>
+</div>
+<div>
+<span class="text-outline block">공정차이</span>
+<span class="font-bold text-status-danger">-10.7%p</span>
+</div>
+<div>
+<span class="text-outline block">기성 누계</span>
+<span class="font-semibold text-on-surface">69.4%</span>
+</div>
+<div>
+<span class="text-outline block">괴리율</span>
+<span class="font-semibold text-status-danger">-6.4%p</span>
+</div>
+</div>
+<div class="mt-2 text-[10px] text-secondary bg-surface-container-lowest p-1 rounded">
+              차수벽 공사 완료 / 패스트트랙 적용 준비
+            </div>
+</div>
+<!-- Snapshot: Site I -->
+<div class="p-space-sm rounded-lg bg-surface-table-header border border-border-grid">
+<div class="flex items-center justify-between mb-1">
+<div class="flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-status-danger"></span>
+<span class="font-table-header text-table-header text-primary font-bold">[I] 화성 바이오물류</span>
+</div>
+<span class="font-badge-label text-badge-label text-status-danger px-1 rounded bg-status-danger-bg font-bold">인력 수급</span>
+</div>
+<div class="grid grid-cols-2 gap-2 mt-2 pt-1 border-t border-border-grid text-[11px]">
+<div>
+<span class="text-outline block">계획 / 실제</span>
+<span class="font-semibold text-on-surface">68.0% / 60.4%</span>
+</div>
+<div>
+<span class="text-outline block">공정차이</span>
+<span class="font-bold text-status-danger">-7.6%p</span>
+</div>
+<div>
+<span class="text-outline block">기성 누계</span>
+<span class="font-semibold text-on-surface">58.2%</span>
+</div>
+<div>
+<span class="text-outline block">괴리율</span>
+<span class="font-semibold text-status-warning">-2.2%p</span>
+</div>
+</div>
+<div class="mt-2 text-[10px] text-secondary bg-surface-container-lowest p-1 rounded">
+              하도급 직영 2개조 전환 / 주말작업 승인
+            </div>
+</div>
+<!-- Snapshot: Site K -->
+<div class="p-space-sm rounded-lg bg-surface-table-header border border-border-grid">
+<div class="flex items-center justify-between mb-1">
+<div class="flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-status-danger"></span>
+<span class="font-table-header text-table-header text-primary font-bold">[K] 평택 포승물류</span>
+</div>
+<span class="font-badge-label text-badge-label text-status-warning px-1 rounded bg-status-warning-bg font-bold">준공 임박</span>
+</div>
+<div class="grid grid-cols-2 gap-2 mt-2 pt-1 border-t border-border-grid text-[11px]">
+<div>
+<span class="text-outline block">계획 / 실제</span>
+<span class="font-semibold text-on-surface">92.0% / 86.6%</span>
+</div>
+<div>
+<span class="text-outline block">공정차이</span>
+<span class="font-bold text-status-danger">-5.4%p</span>
+</div>
+<div>
+<span class="text-outline block">기성 누계</span>
+<span class="font-semibold text-on-surface">84.1%</span>
+</div>
+<div>
+<span class="text-outline block">괴리율</span>
+<span class="font-semibold text-status-normal">-2.5%p</span>
+</div>
+</div>
+<div class="mt-2 text-[10px] text-secondary bg-surface-container-lowest p-1 rounded">
+              준공 D-60 / 소방·전기 설계변경 패스트트랙
+            </div>
+</div>
+</div>
+</div>
+<!-- AI Analysis Protocol & Data Reliability Guide (PRD Requirements) -->
+<div class="bg-surface-container-lowest rounded-lg p-space-md shadow-sm">
+<div class="flex items-center gap-space-xs text-primary font-metric-label text-metric-label mb-space-sm pb-space-xs border-b border-grid">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>AI 분석 원칙 및 신뢰성 안내</span>
+</div>
+<div class="space-y-space-sm text-body-sm font-body-sm text-on-surface-variant">
+<div class="flex items-start gap-space-xs">
+<span class="w-5 h-5 rounded bg-surface-container-high flex items-center justify-center text-primary font-bold text-[11px] shrink-0 mt-0.5">1</span>
+<div>
+<span class="font-semibold text-on-surface block text-[12px]">엄격한 역할 분담</span>
+<p class="text-[11px] text-secondary leading-tight mt-0.5">공정률·기성률·차이 수치는 시스템 로직이 100% 확정 계산하며, AI는 계산된 수치 간의 맥락 설명 및 원장 기록 대조만 수행합니다.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-xs">
+<span class="w-5 h-5 rounded bg-surface-container-high flex items-center justify-center text-primary font-bold text-[11px] shrink-0 mt-0.5">2</span>
+<div>
+<span class="font-semibold text-on-surface block text-[12px]">임의 정보 날조(할루시네이션) 방지</span>
+<p class="text-[11px] text-secondary leading-tight mt-0.5">자료에 없는 '실제 완료일'이나 '공사 미수금' 등은 절대 추정해 답변하지 않으며 확인 불가로 안내합니다.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-xs">
+<span class="w-5 h-5 rounded bg-surface-container-high flex items-center justify-center text-primary font-bold text-[11px] shrink-0 mt-0.5">3</span>
+<div>
+<span class="font-semibold text-on-surface block text-[12px]">필터 변경 시 자동 리셋 원칙</span>
+<p class="text-[11px] text-secondary leading-tight mt-0.5">기준월이나 권역 필터를 변경하면 데이터 불일치를 방지하기 위해 이전 질의응답 창이 초기화됩니다.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-xs">
+<span class="w-5 h-5 rounded bg-surface-container-high flex items-center justify-center text-primary font-bold text-[11px] shrink-0 mt-0.5">4</span>
+<div>
+<span class="font-semibold text-on-surface block text-[12px]">네트워크 무관 안전성</span>
+<p class="text-[11px] text-secondary leading-tight mt-0.5">외부 AI 통신 지연이나 오류가 발생하더라도 사내 현장 비교표(Data Grid) 및 CSV 내보내기는 정상 가동됩니다.</p>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs border-t border-grid flex items-center justify-between text-[11px] text-outline">
+<span>엔진: Gemini 1.5 Pro</span>
+<span class="font-semibold text-secondary">사내 공무 데이터 v4.2</span>
+</div>
+</div>
+</aside>
+</div>
+</div>
+<script>
+  function insertPrompt(promptText) {
+    const input = document.getElementById('ai-query-input');
+    if (input) {
+      input.value = promptText;
+      input.focus();
+    }
+  }
+
+  function executeCustomPrompt() {
+    const input = document.getElementById('ai-query-input');
+    if (input && input.value.trim() !== '') {
+      alert(`[AI 공무 분석 요청]\n\n입력 질의: "${input.value}"\n\n현재 3개 현장(D, I, K) 데이터 셋을 기준으로 실시간 교차 추론을 실행합니다.`);
+      input.value = '';
+    }
+  }
+
+  function updateSelectedCount() {
+    const checkboxes = document.querySelectorAll('.site-chk');
+    const checked = Array.from(checkboxes).filter(c => c.checked).length;
+    const badge = document.getElementById('selected-count');
+    if (badge) {
+      badge.textContent = `${checked} / 12 선택`;
+    }
+  }
+
+  function selectAll(state) {
+    const checkboxes = document.querySelectorAll('.site-chk');
+    checkboxes.forEach(c => {
+      c.checked = state;
+      const parentLabel = c.closest('label');
+      if (parentLabel) {
+        if (state) {
+          parentLabel.classList.add('bg-surface-table-selected');
+        } else {
+          parentLabel.classList.remove('bg-surface-table-selected');
+        }
+      }
+    });
+    updateSelectedCount();
+  }
+
+  function applyComparisonScope() {
+    const checkboxes = document.querySelectorAll('.site-chk:checked');
+    if (checkboxes.length < 2) {
+      alert('비교 질의를 수행하려면 2곳 이상의 현장을 선택하십시오.');
+      return;
+    }
+    const selectedVals = Array.from(checkboxes).map(c => `[현장 ${c.value}]`).join(', ');
+    alert(`비교 대상이 업데이트되었습니다.\n\n적용된 현장: ${selectedVals}`);
+  }
+
+  document.querySelectorAll('.site-chk').forEach(chk => {
+    chk.addEventListener('change', (e) => {
+      const parentLabel = e.target.closest('label');
+      if (e.target.checked) {
+        parentLabel?.classList.add('bg-surface-table-selected');
+      } else {
+        parentLabel?.classList.remove('bg-surface-table-selected');
+      }
+      updateSelectedCount();
+    });
+  });
+
+  const btnExport = document.getElementById('btn-export-brief');
+  if (btnExport) {
+    btnExport.addEventListener('click', () => {
+      const summaryText = `[동일토건 본사 공무팀 AI 분석 보고서 요약]\n기준일: 2026.09.30\n비교 대상: 현장 D, I, K\n- 현장 D (송도): 계획 86.5%, 실제 75.8% (차이 -10.7%p), 기성 69.4% (괴리 -6.4%p) | 연약지반 추가공사 / 집중호우\n- 현장 I (화성): 계획 68.0%, 실제 60.4% (차이 -7.6%p), 기성 58.2% (괴리 -2.2%p) | 골조 하도급 인력수급\n- 현장 K (평택): 계획 92.0%, 실제 86.6% (차이 -5.4%p), 기성 84.1% (괴리 -2.5%p) | 소방·전기 설계변경\n* 자료 출처: 2026년 9월 동일토건 ERP 공무원장 (144행)`;
+      navigator.clipboard.writeText(summaryText).then(() => {
+        alert('AI 비교 분석 요약이 클립보드에 복사되었습니다.');
+      }).catch(() => {
+        alert('복사되었습니다.');
+      });
+    });
+  }
+</script></main><footer class="w-full bg-surface-container-low py-space-lg shadow-[0_-1px_6px_rgba(0,0,0,0.03)]"><div class="w-full px-margin flex flex-col md:flex-row items-center justify-between gap-space-sm"><div class="flex items-center gap-space-md"><span class="font-table-header text-table-header text-primary">(주)동일토건 본사 경영지원본부 공무팀</span><span class="font-body-sm text-body-sm text-outline">|</span><span class="font-body-sm text-body-sm text-on-surface-variant">사내 종합 공정 및 기성 진도 모니터링 시스템 v4.2</span></div><div class="flex items-center gap-space-lg font-body-sm text-body-sm text-on-surface-variant"><span>기준일: 2026-09-30 24:00</span><span>시스템 문의: 본사 공무팀 (내선 1402)</span></div></div></footer></body></html>
